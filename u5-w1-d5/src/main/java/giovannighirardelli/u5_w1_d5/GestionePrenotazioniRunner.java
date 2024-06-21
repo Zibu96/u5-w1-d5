@@ -66,5 +66,7 @@ public class GestionePrenotazioniRunner implements CommandLineRunner {
         postazioneService.findByTipoAndCity("PRIVATO", "Roma").forEach(System.out::println);
         edificioService.findByCity("Roma").forEach(System.out::println);
 
+
+        context.close();
     }
 }
