@@ -20,12 +20,12 @@ public class Edificio {
     private long id;
     private String nome;
     private String indirizzo;
-    private String città;
+    private String city;
 
 
-    public Edificio(String nome, String indirizzo, String città) {
+    public Edificio(String nome, String indirizzo, String city) {
         this.nome = nome;
         this.indirizzo = indirizzo;
-        this.città = città;
+        this.city = city;
     }
 }

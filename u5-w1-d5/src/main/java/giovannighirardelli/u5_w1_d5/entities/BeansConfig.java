@@ -36,27 +36,27 @@ public class BeansConfig {
         return new Edificio("Eliseo", "Via Roma 1", "Firenze");
     }
 
-    @Bean
-    public Postazione postazione1(){
-        return new Postazione("Piccolo spazio per lavorare in serenità", Tipo.PRIVATO, 1, edificio1());
-    }
-
-    @Bean
-    public Postazione postazione2(){
-        return new Postazione("Spazio di lavoro comune, comodo per il networking", Tipo.OPENSPACE, 12, edificio3());
-    }
-
-    @Bean
-    public Postazione postazione3(){
-        return new Postazione("Elegante sala dotata di tutti i comfort per le aziende", Tipo.SALA_RIUONIONI, 89, edificio4() );
-    }
-    @Bean
-    public Postazione postazione4(){
-        return new Postazione("Openspace curato con postazioni singole per lavorare in pace", Tipo.OPENSPACE, 9, edificio2());
-    }
-    @Bean Postazione postazione5(){
-        return new Postazione("Piccolo ufficio privato per lavoro in solitaria", Tipo.PRIVATO, 1, edificio5());
-    }
+//    @Bean
+//    public Postazione postazione1(){
+//        return new Postazione("Piccolo spazio per lavorare in serenità", Tipo.PRIVATO, 1, edificio1());
+//    }
+//
+//    @Bean
+//    public Postazione postazione2(){
+//        return new Postazione("Spazio di lavoro comune, comodo per il networking", Tipo.OPENSPACE, 12, edificio3());
+//    }
+//
+//    @Bean
+//    public Postazione postazione3(){
+//        return new Postazione("Elegante sala dotata di tutti i comfort per le aziende", Tipo.SALA_RIUONIONI, 89, edificio4() );
+//    }
+//    @Bean
+//    public Postazione postazione4(){
+//        return new Postazione("Openspace curato con postazioni singole per lavorare in pace", Tipo.OPENSPACE, 9, edificio2());
+//    }
+//    @Bean Postazione postazione5(){
+//        return new Postazione("Piccolo ufficio privato per lavoro in solitaria", Tipo.PRIVATO, 1, edificio5());
+//    }
 
     @Bean Utente utente(){
         return new Utente(faker.pokemon().name(), faker.name().firstName(), faker.name().lastName(), faker.internet().emailAddress());
