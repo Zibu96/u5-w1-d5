@@ -4,6 +4,8 @@ package giovannighirardelli.u5_w1_d5.entities;
 import giovannighirardelli.u5_w1_d5.enums.Tipo;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "postazione")
@@ -22,9 +24,11 @@ public class Postazione {
     private Tipo tipo;
     @Column(name = "max_partecipanti")
     private int numeroMaxPartecipanti;
+
     @ManyToOne
     @JoinColumn(name = "id_edificio")
     private Edificio edificio;
+
 
     public Postazione(String descrizione, Tipo tipo, int numeroMaxPartecipanti, Edificio edificio) {
         this.descrizione = descrizione;

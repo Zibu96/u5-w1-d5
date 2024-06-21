@@ -5,10 +5,12 @@ import com.github.javafaker.Faker;
 import giovannighirardelli.u5_w1_d5.enums.Tipo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import java.util.Locale;
 
 @Configuration
+@PropertySource("application.properties")
 public class BeansConfig {
     Faker faker= new Faker(Locale.ITALY);
 
